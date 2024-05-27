@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Pivot Table</title>
+</head>
+<body>
+
+    <h3>Pivot Table Example</h3>
+    <div>
+        <button id="btnPivot">Pivot</button>
+        <button id="arrsum">ArrSum</button>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+        <div class="configurator">
+            <h3 style="margin: 10px 12px;">PivotTable Fields</h3>
+            <div>
+                <div class="search-input">
+
+                    <input type="text" placeholder="search" />
+
+                </div>
+                <div class="fields-container" id="fields-container">
+                </div>
+                <div style="margin: 10px 12px;">
+                    <div style="margin: 10px 12px;">Drag fields between areas below:</div>
+                    <div class="configuration-columns">
+
+                        <div style="border-right: 1px solid black; padding-right: 10px">
+                            <div>Filters</div>
+                            <div class="filters-container"></div>
+                            <div>Rows</div>
+                            <div class="filters-container" id="filtered-rows"></div>
+                        </div>
+                        <div style="border-right: 1px solid black; padding-right: 10px">
+                            <div>Columns</div>
+                            <div class="filters-container"></div>
+                            <div>Values</div>
+                            <div class="filters-container" id="filter-values"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+<script type="module" src="index.js"></script>
+</html>
